@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cloud Cleaning Services | Austin House Cleaning & Move-Out Cleaning</title>
+  <meta name="description" content="Cloud Cleaning Services provides pet-friendly, eco-conscious residential, deep, move-in/move-out, and office cleaning across Austin, Round Rock, Hutto, Georgetown, Cedar Park, and Pflugerville." />
+  <meta name="theme-color" content="#2f9ed8" />
+  <meta property="og:title" content="Cloud Cleaning Services | Austin & Central Texas" />
+  <meta property="og:description" content="Pet-friendly, eco-conscious cleaning with flexible scheduling and a satisfaction guarantee." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=82" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sky: #2f9ed8;
+      --sky-dark: #1374ad;
+      --sky-deep: #0a4d78;
+      --sky-soft: #e9f7fd;
+      --mint: #74b79b;
+      --mint-soft: #edf8f3;
+      --cream: #fbfaf6;
+      --sand: #f2efe7;
+      --navy: #112633;
+      --ink: #18262e;
+      --muted: #647783;
+      --line: #dce9ee;
+      --white: #ffffff;
+      --warning: #ffc857;
+      --shadow: 0 22px 60px rgba(10, 77, 120, 0.14);
+      --shadow-soft: 0 14px 35px rgba(17, 38, 51, 0.08);
+      --radius-xl: 34px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --container: 1180px;
+      --header-height: 78px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.nav-open { overflow: hidden; }
+    img, svg { display: block; max-width: 100%; }
+    img { height: auto; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; }
+    input, select, textarea { font-size: 16px; }
+    h1, h2, h3, h4 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--navy);
+      line-height: 1.04;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: clamp(3.4rem, 7vw, 6.8rem); font-weight: 700; }
+    h2 { font-size: clamp(2.5rem, 4.8vw, 4.6rem); font-weight: 700; }
+    h3 { font-size: clamp(1.6rem, 2vw, 2.05rem); font-weight: 700; }
+    p { color: var(--muted); }
+    em { color: var(--sky-dark); font-style: italic; }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 9999;
+      transform: translateY(-150%);
+      background: var(--navy);
+      color: var(--white);
+      padding: 10px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .skip-link:focus { transform: translateY(0); }
+    :focus-visible { outline: 3px solid rgba(47, 158, 216, 0.45); outline-offset: 3px; }
+
+    .container { width: min(var(--container), calc(100% - 40px)); margin-inline: auto; }
+    .section { padding: 112px 0; position: relative; }
+    .section-header { max-width: 730px; margin-bottom: 52px; }
+    .section-header.center { margin-inline: auto; text-align: center; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--sky-dark);
+      background: var(--sky-soft);
+      border: 1px solid rgba(47, 158, 216, 0.18);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 0 6px rgba(47, 158, 216, 0.12);
+    }
+    .lead { font-size: clamp(1rem, 1.6vw, 1.2rem); max-width: 690px; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 50px;
+      padding: 14px 23px;
+      border: 0;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--sky); color: var(--white); box-shadow: 0 12px 28px rgba(47, 158, 216, 0.26); }
+    .btn-primary:hover { background: var(--sky-dark); box-shadow: 0 16px 35px rgba(19, 116, 173, 0.28); }
+    .btn-secondary { background: var(--white); color: var(--sky-dark); border: 1px solid rgba(47, 158, 216, 0.24); box-shadow: var(--shadow-soft); }
+    .btn-secondary:hover { border-color: var(--sky); }
+    .btn-ghost { background: transparent; color: var(--navy); border: 1px solid rgba(17, 38, 51, 0.14); }
+
+    .topbar {
+      background: var(--navy);
+      color: rgba(255,255,255,0.78);
+      font-size: 0.88rem;
+      position: relative;
+      z-index: 120;
+    }
+    .topbar-inner {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .topbar strong { color: var(--white); }
+    .topbar a { color: var(--white); text-decoration: none; font-weight: 800; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 110;
+      background: rgba(251, 250, 246, 0.9);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(220, 233, 238, 0.86);
+    }
+    .nav {
+      min-height: var(--header-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--sky), var(--mint));
+      box-shadow: 0 10px 25px rgba(47, 158, 216, 0.25);
+      font-size: 1.32rem;
+      font-weight: 800;
+    }
+    .brand-text { display: grid; line-height: 1; }
+    .brand-name {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--navy);
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+    .brand-sub { margin-top: 5px; color: var(--muted); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+    .nav-menu { display: flex; align-items: center; gap: 27px; }
+    .nav-menu a {
+      color: #3c505c;
+      text-decoration: none;
+      font-size: 0.93rem;
+      font-weight: 800;
+      transition: color 0.18s ease;
+    }
+    .nav-menu a:hover { color: var(--sky-dark); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .phone-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--navy);
+      font-weight: 900;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .phone-pill span {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--sky-soft);
+      color: var(--sky-dark);
+    }
+    .nav-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: var(--white);
+      color: var(--navy);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .hamburger, .hamburger::before, .hamburger::after {
+      width: 20px;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      display: block;
+      position: relative;
+      transition: transform 0.22s ease, opacity 0.22s ease;
+    }
+    .hamburger::before, .hamburger::after { content: ""; position: absolute; left: 0; }
+    .hamburger::before { top: -7px; }
+    .hamburger::after { top: 7px; }
+    .nav-open .hamburger { transform: rotate(45deg); }
+    .nav-open .hamburger::before { transform: translateY(7px) rotate(90deg); }
+    .nav-open .hamburger::after { opacity: 0; }
+
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 42px - var(--header-height));
+      padding: 88px 0 78px;
+      isolation: isolate;
+      background:
+        linear-gradient(90deg, rgba(251,250,246,0.98) 0%, rgba(251,250,246,0.9) 42%, rgba(251,250,246,0.32) 100%),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=82") center right / cover no-repeat;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 12% 15%, rgba(116,183,155,0.17), transparent 27%),
+        radial-gradient(circle at 60% 18%, rgba(47,158,216,0.11), transparent 22%);
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 420px;
+      gap: 50px;
+      align-items: center;
+    }
+    .hero-copy { max-width: 760px; }
+    .hero h1 { margin-bottom: 22px; max-width: 780px; }
+    .hero .lead { margin-bottom: 30px; color: #506572; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 30px; }
+    .micro-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+      margin-top: 4px;
+    }
+    .micro-trust li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(220, 233, 238, 0.94);
+      box-shadow: 0 8px 24px rgba(17, 38, 51, 0.06);
+      color: #3d5360;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+    .micro-trust li span { color: var(--sky-dark); }
+
+    .quote-panel {
+      align-self: stretch;
+      display: grid;
+      align-content: end;
+      position: relative;
+      min-height: 560px;
+    }
+    .photo-stack {
+      position: absolute;
+      inset: 0 0 80px 30px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 10px solid rgba(255,255,255,0.82);
+    }
+    .photo-stack img { width: 100%; height: 100%; object-fit: cover; }
+    .photo-stack::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 45%, rgba(17, 38, 51, 0.58));
+    }
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      margin-left: -30px;
+      background: rgba(255,255,255,0.96);
+      border: 1px solid rgba(220, 233, 238, 0.9);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .hero-card .stars { color: #f2aa2b; letter-spacing: -0.05em; font-size: 1.05rem; }
+    .hero-card strong { color: var(--navy); font-weight: 900; }
+    .hero-card p { margin: 8px 0 18px; color: #526977; }
+    .quote-list { display: grid; gap: 11px; list-style: none; padding: 0; }
+    .quote-list li { display: flex; gap: 10px; align-items: flex-start; color: #405765; font-weight: 700; }
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--mint-soft);
+      color: #347e61;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      font-weight: 900;
+      font-size: 0.82rem;
+    }
+
+    .trust-rail {
+      background: var(--white);
+      border-block: 1px solid var(--line);
+      box-shadow: 0 12px 30px rgba(17,38,51,0.04);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: var(--line);
+    }
+    .trust-item {
+      background: var(--white);
+      padding: 24px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 86px;
+      text-align: left;
+    }
+    .trust-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: var(--sky-soft);
+      color: var(--sky-dark);
+      flex: 0 0 auto;
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+    .trust-item strong { display: block; color: var(--navy); line-height: 1.15; font-size: 0.95rem; }
+    .trust-item span { display: block; color: var(--muted); font-size: 0.82rem; margin-top: 2px; }
+
+    .intro {
+      background:
+        radial-gradient(circle at top left, rgba(47,158,216,0.12), transparent 32%),
+        var(--cream);
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 0.96fr 1.04fr;
+      gap: 52px;
+      align-items: center;
+    }
+    .image-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      min-height: 520px;
+      box-shadow: var(--shadow);
+      background: var(--sand);
+    }
+    .image-card img { width: 100%; height: 100%; object-fit: cover; min-height: inherit; }
+    .floating-note {
+      position: absolute;
+      left: 24px;
+      bottom: 24px;
+      right: 24px;
+      padding: 20px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.7);
+      box-shadow: 0 20px 44px rgba(17,38,51,0.16);
+    }
+    .floating-note strong { color: var(--navy); display: block; font-size: 1.06rem; }
+    .floating-note span { color: var(--muted); font-weight: 700; font-size: 0.92rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: var(--shadow-soft);
+    }
+    .feature-card .icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: var(--mint-soft);
+      margin-bottom: 14px;
+      font-size: 1.25rem;
+    }
+    .feature-card h3 { font-size: 1.45rem; margin-bottom: 7px; }
+    .feature-card p { font-size: 0.95rem; }
+
+    .services { background: var(--white); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .service-card {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      min-height: 420px;
+      border-radius: 30px;
+      background: var(--navy);
+      box-shadow: var(--shadow-soft);
+      isolation: isolate;
+    }
+    .service-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      inset: 0;
+      transition: transform 0.38s ease;
+      z-index: -2;
+    }
+    .service-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(17,38,51,0.06) 0%, rgba(17,38,51,0.74) 62%, rgba(17,38,51,0.92) 100%);
+      z-index: -1;
+    }
+    .service-card:hover img { transform: scale(1.05); }
+    .service-body { align-self: end; padding: 28px; color: var(--white); }
+    .service-label {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 13px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.18);
+      color: var(--white);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .service-card h3 { color: var(--white); margin-bottom: 10px; }
+    .service-card p { color: rgba(255,255,255,0.78); margin-bottom: 16px; }
+    .service-points { list-style: none; padding: 0; display: grid; gap: 8px; }
+    .service-points li { display: flex; gap: 8px; color: rgba(255,255,255,0.88); font-size: 0.93rem; }
+    .service-points li::before { content: "•"; color: var(--warning); font-weight: 900; }
+    .service-cta-card {
+      border-radius: 30px;
+      padding: 32px;
+      background: linear-gradient(135deg, var(--sky-deep), var(--sky));
+      color: var(--white);
+      min-height: 420px;
+      display: grid;
+      align-content: space-between;
+      box-shadow: var(--shadow);
+    }
+    .service-cta-card h3 { color: var(--white); font-size: 2.1rem; }
+    .service-cta-card p { color: rgba(255,255,255,0.82); margin-top: 12px; }
+    .service-cta-card .btn { margin-top: 24px; color: var(--sky-dark); }
+    .mini-list { list-style: none; padding: 0; display: grid; gap: 10px; margin-top: 22px; }
+    .mini-list li { display: flex; align-items: center; gap: 10px; font-weight: 800; color: rgba(255,255,255,0.92); }
+    .mini-list li span { background: rgba(255,255,255,0.18); border-radius: 50%; width: 24px; height: 24px; display: grid; place-items: center; }
+
+    .method {
+      background:
+        linear-gradient(180deg, rgba(233,247,253,0.72), rgba(251,250,246,1)),
+        var(--cream);
+    }
+    .method-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .method-step {
+      position: relative;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 26px;
+      box-shadow: var(--shadow-soft);
+      min-height: 250px;
+    }
+    .step-num {
+      display: inline-grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      color: var(--sky-dark);
+      background: var(--sky-soft);
+      font-weight: 900;
+      margin-bottom: 22px;
+    }
+    .method-step h3 { font-size: 1.45rem; margin-bottom: 10px; }
+    .method-step p { font-size: 0.95rem; }
+
+    .gallery { background: var(--navy); color: var(--white); overflow: hidden; }
+    .gallery h2, .gallery h3 { color: var(--white); }
+    .gallery p { color: rgba(255,255,255,0.72); }
+    .gallery .eyebrow { background: rgba(255,255,255,0.1); color: #c6ecff; border-color: rgba(255,255,255,0.14); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.8fr 0.8fr;
+      grid-template-rows: 310px 310px;
+      gap: 18px;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.08);
+      min-height: 240px;
+    }
+    .gallery-item:first-child { grid-row: span 2; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.38s ease; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-caption {
+      position: absolute;
+      inset: auto 16px 16px 16px;
+      padding: 13px 15px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.91);
+      color: var(--navy);
+      font-weight: 900;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    }
+
+    .plans { background: var(--white); }
+    .plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .plan-card {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 30px;
+      background: var(--cream);
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      gap: 18px;
+    }
+    .plan-card.featured { background: var(--navy); color: var(--white); transform: translateY(-12px); box-shadow: var(--shadow); }
+    .plan-card.featured h3, .plan-card.featured .plan-price { color: var(--white); }
+    .plan-card.featured p, .plan-card.featured li { color: rgba(255,255,255,0.76); }
+    .plan-card h3 { font-size: 1.75rem; }
+    .plan-price { font-family: "Cormorant Garamond", Georgia, serif; color: var(--sky-dark); font-size: 2.6rem; font-weight: 700; line-height: 0.95; }
+    .plan-price span { display: block; font-family: "DM Sans", sans-serif; font-size: 0.84rem; font-weight: 800; color: var(--muted); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .plan-card.featured .plan-price span { color: rgba(255,255,255,0.62); }
+    .plan-list { list-style: none; padding: 0; display: grid; gap: 10px; }
+    .plan-list li { display: flex; gap: 9px; color: #536977; font-weight: 700; }
+
+    .reviews {
+      background:
+        radial-gradient(circle at 90% 15%, rgba(116,183,155,0.18), transparent 30%),
+        var(--cream);
+    }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .review-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: var(--shadow-soft);
+    }
+    .review-card .stars { color: #f2aa2b; letter-spacing: -0.05em; margin-bottom: 14px; }
+    .review-card blockquote {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      color: var(--navy);
+      font-size: 1.45rem;
+      line-height: 1.35;
+      font-style: italic;
+      margin-bottom: 22px;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--sky-soft);
+      color: var(--sky-dark);
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+    .review-author strong { display: block; color: var(--navy); line-height: 1.15; }
+    .review-author span { display: block; color: var(--muted); font-size: 0.88rem; }
+
+    .areas {
+      background:
+        linear-gradient(135deg, rgba(19,116,173,0.96), rgba(10,77,120,0.96)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80") center / cover no-repeat;
+      color: var(--white);
+    }
+    .areas .section-header { margin-bottom: 34px; }
+    .areas h2 { color: var(--white); }
+    .areas p { color: rgba(255,255,255,0.76); }
+    .areas .eyebrow { color: #daf4ff; background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.18); }
+    .area-chips { display: flex; flex-wrap: wrap; gap: 12px; }
+    .area-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 17px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.24);
+      backdrop-filter: blur(12px);
+      color: var(--white);
+      font-weight: 900;
+    }
+
+    .faq { background: var(--white); }
+    .faq-grid { max-width: 920px; margin: 0 auto; display: grid; gap: 14px; }
+    details {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 20px 22px;
+      box-shadow: var(--shadow-soft);
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      color: var(--navy);
+      font-weight: 900;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--sky-soft);
+      color: var(--sky-dark);
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+    details[open] summary::after { content: "−"; }
+    details p { padding-top: 14px; max-width: 740px; }
+
+    .contact {
+      background:
+        linear-gradient(180deg, var(--cream), #eef9fd);
+    }
+    .contact-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 44px; align-items: start; }
+    .contact-card, .form-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+    .contact-card { overflow: hidden; }
+    .contact-card img { width: 100%; height: 270px; object-fit: cover; }
+    .contact-content { padding: 30px; }
+    .contact-list { list-style: none; padding: 0; margin-top: 24px; display: grid; gap: 16px; }
+    .contact-list li { display: flex; align-items: flex-start; gap: 13px; }
+    .contact-list .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 15px;
+      background: var(--sky-soft);
+      display: grid;
+      place-items: center;
+      color: var(--sky-dark);
+      flex: 0 0 auto;
+      font-weight: 900;
+    }
+    .contact-list strong { display: block; color: var(--navy); }
+    .contact-list a { color: var(--sky-dark); text-decoration: none; font-weight: 900; }
+    .hours {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 22px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    .hours-row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+    .hours-row:last-child { border-bottom: 0; }
+    .hours-row strong { color: var(--navy); }
+
+    .form-card { padding: 34px; }
+    .form-intro { margin-bottom: 24px; }
+    .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .field { display: grid; gap: 7px; margin-bottom: 16px; }
+    .field.full { grid-column: 1 / -1; }
+    label { color: var(--navy); font-size: 0.9rem; font-weight: 900; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: var(--cream);
+      color: var(--ink);
+      padding: 13px 14px;
+      outline: none;
+      transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+    }
+    textarea { min-height: 128px; resize: vertical; }
+    input:focus, select:focus, textarea:focus { border-color: var(--sky); background: var(--white); box-shadow: 0 0 0 4px rgba(47,158,216,0.12); }
+    .form-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+    .form-note { margin-top: 13px; font-size: 0.88rem; color: var(--muted); }
+    .form-status { min-height: 24px; margin-top: 12px; color: var(--sky-dark); font-weight: 800; }
+
+    .site-footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.72);
+      padding: 70px 0 34px;
+    }
+    .footer-grid { display: grid; grid-template-columns: 1.35fr 0.8fr 0.8fr 0.9fr; gap: 44px; margin-bottom: 46px; }
+    .site-footer .brand-name { color: var(--white); }
+    .site-footer .brand-sub { color: rgba(255,255,255,0.56); }
+    .site-footer p { color: rgba(255,255,255,0.58); margin-top: 18px; max-width: 390px; }
+    .footer-col h3 {
+      font-family: "DM Sans", sans-serif;
+      color: rgba(255,255,255,0.42);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.76rem;
+      margin-bottom: 18px;
+    }
+    .footer-col ul { list-style: none; padding: 0; display: grid; gap: 10px; }
+    .footer-col a { color: rgba(255,255,255,0.72); text-decoration: none; transition: color 0.18s ease; }
+    .footer-col a:hover { color: var(--white); }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; align-items: center; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.92rem; }
+    .socials { display: flex; gap: 10px; }
+    .socials a {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    .sticky-quote {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 100;
+      box-shadow: 0 20px 46px rgba(47,158,216,0.34);
+    }
+
+    @media (max-width: 1100px) {
+      .topbar-inner { justify-content: center; text-align: center; flex-wrap: wrap; padding: 8px 0; }
+      .nav-actions .phone-pill { display: none; }
+      .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; }
+      .quote-panel { min-height: 520px; max-width: 600px; }
+      .photo-stack { inset: 0 0 70px 0; }
+      .hero-card { margin-left: 0; }
+      .trust-grid { grid-template-columns: repeat(3, 1fr); }
+      .services-grid, .plans-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .method-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 310px 310px 310px; }
+      .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 840px) {
+      :root { --header-height: 70px; }
+      .container { width: min(100% - 32px, var(--container)); }
+      .topbar { display: none; }
+      .nav-toggle { display: inline-flex; }
+      .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: 16px;
+        right: 16px;
+        display: grid;
+        gap: 0;
+        padding: 10px;
+        background: rgba(255,255,255,0.98);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+        transform: translateY(-14px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s ease;
+      }
+      .nav-open .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+      .nav-menu a { padding: 14px 16px; border-radius: 15px; }
+      .nav-menu a:hover { background: var(--sky-soft); }
+      .nav-actions .btn { display: none; }
+      .hero { padding: 72px 0 56px; background-position: 58% center; }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: rgba(251,250,246,0.66);
+      }
+      .hero-actions .btn { width: 100%; }
+      .trust-grid, .services-grid, .plans-grid, .reviews-grid, .method-grid, .feature-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
+      .plan-card.featured { transform: none; }
+      .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+      .gallery-item:first-child { grid-column: auto; }
+      .gallery-item { min-height: 300px; }
+      .section { padding: 84px 0; }
+      .image-card { min-height: 420px; }
+      .sticky-quote { left: 16px; right: 16px; bottom: 14px; width: calc(100% - 32px); }
+      .sticky-quote .btn { width: 100%; }
+      .site-footer { padding-bottom: 92px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+
+    @media (max-width: 540px) {
+      h1 { font-size: clamp(3rem, 15vw, 4.3rem); }
+      .brand-mark { width: 43px; height: 43px; border-radius: 15px; }
+      .brand-name { font-size: 1.35rem; }
+      .brand-sub { display: none; }
+      .quote-panel { min-height: 440px; }
+      .photo-stack { inset: 0 0 105px 0; border-width: 7px; }
+      .hero-card { padding: 20px; border-radius: 24px; }
+      .trust-item { justify-content: flex-start; }
+      .service-card, .service-cta-card { min-height: 390px; }
+      .form-card, .contact-content { padding: 24px; }
+      .hours-row { flex-direction: column; gap: 2px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Cloud Cleaning Services",
+    "description": "Pet-friendly, eco-conscious residential, deep, move-in/move-out, and office cleaning in Austin and Central Texas.",
+    "telephone": "+1-512-486-0448",
+    "email": "cloudcleanexperience@gmail.com",
+    "areaServed": ["Austin TX", "Round Rock TX", "Georgetown TX", "Hutto TX", "Cedar Park TX", "Pflugerville TX"],
+    "sameAs": [
+      "https://www.instagram.com/cloudcleaningservicess/",
+      "http://www.facebook.com/casscloudcleaning",
+      "https://www.tiktok.com/@cloudcleaningservices"
+    ],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"19:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar" aria-label="Service announcement">
+    <div class="container topbar-inner">
+      <span><strong>Austin & Central Texas cleaning</strong> — family-owned, pet-friendly, and eco-conscious.</span>
+      <span>Call or text <a href="tel:5124860448">512-486-0448</a> for a free quote.</span>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Cloud Cleaning Services home">
+        <span class="brand-mark" aria-hidden="true">☁</span>
+        <span class="brand-text">
+          <span class="brand-name">Cloud Cleaning</span>
+          <span class="brand-sub">Austin • Central TX</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#method">How It Works</a>
+        <a href="#gallery">Results</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Areas</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="phone-pill" href="tel:5124860448"><span aria-hidden="true">☎</span>512-486-0448</a>
+        <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="nav-menu" aria-expanded="false" data-nav-toggle>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Local cleaning, elevated</div>
+          <h1>Come home to a <em>fresh, calm, cloud-clean</em> space.</h1>
+          <p class="lead">Beautifully detailed house cleaning for busy families, pet parents, movers, hosts, and offices across Austin and Central Texas. We keep the process simple: clear quotes, flexible scheduling, thoughtful products, and a clean you can feel.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Request Your Free Quote</a>
+            <a class="btn btn-secondary" href="tel:5124860448">Call / Text 512-486-0448</a>
+          </div>
+          <ul class="micro-trust" aria-label="Service highlights">
+            <li><span>✓</span>Pet-safe options</li>
+            <li><span>✓</span>Eco-conscious products</li>
+            <li><span>✓</span>Move-out ready</li>
+            <li><span>✓</span>Satisfaction follow-up</li>
+          </ul>
+        </div>
+
+        <aside class="quote-panel" aria-label="Why customers choose Cloud Cleaning">
+          <div class="photo-stack" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=82" alt="" />
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-head">
+              <div>
+                <strong>Premium clean, no complicated contract</strong>
+                <div class="stars" aria-label="Five-star service experience">★★★★★</div>
+              </div>
+              <span class="trust-icon" aria-hidden="true">🌿</span>
+            </div>
+            <p>Designed for people who want a reliable cleaning partner, not another chore to manage.</p>
+            <ul class="quote-list">
+              <li><span class="check">✓</span><span>One-time, weekly, bi-weekly, monthly, and move-out cleans.</span></li>
+              <li><span class="check">✓</span><span>Priority areas, product preferences, pets, and access notes saved for each visit.</span></li>
+              <li><span class="check">✓</span><span>If something feels off, reach out and we will make it right.</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-rail" aria-label="Trust signals">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon">✓</span><div><strong>Trained pros</strong><span>Consistent checklists</span></div></div>
+        <div class="trust-item"><span class="trust-icon">🐾</span><div><strong>Pet-friendly</strong><span>Safe product options</span></div></div>
+        <div class="trust-item"><span class="trust-icon">🌿</span><div><strong>Eco-conscious</strong><span>Gentle where it matters</span></div></div>
+        <div class="trust-item"><span class="trust-icon">📅</span><div><strong>Flexible times</strong><span>One-time or recurring</span></div></div>
+        <div class="trust-item"><span class="trust-icon">💬</span><div><strong>Easy quoting</strong><span>Call, text, or form</span></div></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="container split">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=82" alt="Bright clean bathroom with white tile and glass shower" loading="lazy" decoding="async" />
+          <div class="floating-note">
+            <strong>Detail-first cleaning that feels personal.</strong>
+            <span>Tell us what matters most, and we will build your checklist around it.</span>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">Why Cloud Cleaning</div>
+          <h2>Luxury-level presentation with a neighborly, local feel.</h2>
+          <p class="lead">The best cleaning websites make the next step obvious and build trust fast. This redesign gives Cloud Cleaning the same kind of polished, photo-led experience while keeping the personality warm, local, and easy to book.</p>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon" aria-hidden="true">🧼</div>
+              <h3>Tailored checklists</h3>
+              <p>Each clean can focus on your priorities: kitchens, bathrooms, pet hair, baseboards, appliances, guest prep, or move-out details.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon" aria-hidden="true">🛡</div>
+              <h3>Quality follow-up</h3>
+              <p>Clear communication before and after service helps reduce callbacks and creates a smoother customer experience.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon" aria-hidden="true">🌱</div>
+              <h3>Product preferences</h3>
+              <p>Eco-conscious and pet-safe options can be requested, and client-provided products can be used when preferred.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon" aria-hidden="true">⚡</div>
+              <h3>Fast conversion</h3>
+              <p>Phone, quote button, service area, hours, FAQ, and request form are repeated where customers naturally look.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">Services</div>
+          <h2>Choose your clean. We will handle the details.</h2>
+          <p class="lead">Residential, deep, move-out, office, and green cleaning services designed for Central Texas homes and small businesses.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=82" alt="Bright and tidy living room after residential cleaning" loading="lazy" decoding="async" />
+            <div class="service-body">
+              <span class="service-label">Most requested</span>
+              <h3>Residential Cleaning</h3>
+              <p>Routine care for kitchens, bathrooms, bedrooms, floors, dusting, surfaces, and the details that keep home feeling calm.</p>
+              <ul class="service-points"><li>Weekly, bi-weekly, or monthly</li><li>Dusting, vacuuming, mopping</li><li>Kitchen and bathroom sanitizing</li></ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=82" alt="Vacuum removing confetti from carpet during a deep clean" loading="lazy" decoding="async" />
+            <div class="service-body">
+              <span class="service-label">Reset clean</span>
+              <h3>Deep Cleaning</h3>
+              <p>A more detailed visit for buildup, corners, fixtures, baseboards, appliance fronts, tile, and seasonal refreshes.</p>
+              <ul class="service-points"><li>Great for first-time clients</li><li>Baseboards and detail dusting</li><li>High-touch surface sanitizing</li></ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=82" alt="Modern home exterior ready for move-in cleaning" loading="lazy" decoding="async" />
+            <div class="service-body">
+              <span class="service-label">Move ready</span>
+              <h3>Move-In / Move-Out</h3>
+              <p>Empty-home cleaning for leases, listings, new homes, final walk-throughs, and deposit-friendly move-outs.</p>
+              <ul class="service-points"><li>Cabinets, drawers, and shelves</li><li>Appliances inside and out</li><li>Floor, baseboard, and door care</li></ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82" alt="Clean modern office hallway for commercial cleaning" loading="lazy" decoding="async" />
+            <div class="service-body">
+              <span class="service-label">Commercial</span>
+              <h3>Office Cleaning</h3>
+              <p>Clean workspaces, breakrooms, restrooms, shared surfaces, and floors for small offices and local businesses.</p>
+              <ul class="service-points"><li>Flexible after-hours options</li><li>Restroom and breakroom care</li><li>Recurring maintenance plans</li></ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=82" alt="Two happy dogs representing pet-friendly cleaning options" loading="lazy" decoding="async" />
+            <div class="service-body">
+              <span class="service-label">Family safe</span>
+              <h3>Pet-Friendly & Green</h3>
+              <p>Gentler product options for homes with children, pets, fragrance sensitivities, and eco-conscious preferences.</p>
+              <ul class="service-points"><li>Pet hair focus available</li><li>Low-tox product choices</li><li>Client-provided products welcome</li></ul>
+            </div>
+          </article>
+
+          <aside class="service-cta-card">
+            <div>
+              <span class="service-label">Need help choosing?</span>
+              <h3>Not sure which clean is right?</h3>
+              <p>Tell us your home size, city, timing, pets, and priority rooms. We will recommend the best fit and give you a straightforward estimate.</p>
+              <ul class="mini-list">
+                <li><span>1</span>Send the form</li>
+                <li><span>2</span>Get a fast reply</li>
+                <li><span>3</span>Book your clean</li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" href="#contact">Start My Quote</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method" id="method">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">How it works</div>
+          <h2>Simple from first text to final walkthrough.</h2>
+          <p class="lead">A clear process keeps the experience professional, predictable, and easy for the customer.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-step">
+            <span class="step-num">01</span>
+            <h3>Share your home details</h3>
+            <p>Tell us the service type, square footage, city, pets, and any priority rooms or concerns.</p>
+          </article>
+          <article class="method-step">
+            <span class="step-num">02</span>
+            <h3>Get your custom estimate</h3>
+            <p>We provide a quote based on the job instead of forcing you into a one-size-fits-all package.</p>
+          </article>
+          <article class="method-step">
+            <span class="step-num">03</span>
+            <h3>We clean with care</h3>
+            <p>Our team follows your notes, uses preferred product options, and focuses on the high-impact details.</p>
+          </article>
+          <article class="method-step">
+            <span class="step-num">04</span>
+            <h3>You enjoy the reset</h3>
+            <p>Walk into a fresher space. If something needs attention, let us know and we will make it right.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Photo-led presentation</div>
+          <h2>Make the clean feel real before customers call.</h2>
+          <p class="lead">Replace these curated stock photos with your own before-and-after shots, team photos, and detail closeups when you have them. Until then, they create the polished visual trust most modern cleaning sites rely on.</p>
+        </div>
+        <div class="gallery-grid" aria-label="Cleaning service visual gallery">
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=82" alt="Cleaner wiping window shutters during a detailed cleaning service" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption">Detail cleaning</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=82" alt="Clean bright bathroom after a deep cleaning" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption">Bathroom reset</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=82" alt="Vacuum cleaning a carpet" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption">Floor care</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82" alt="Clean professional office hallway" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption">Office shine</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=900&q=82" alt="Two dogs for pet-friendly cleaning services" loading="lazy" decoding="async" />
+            <figcaption class="gallery-caption">Pet-friendly homes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section plans" id="plans">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">Popular clean types</div>
+          <h2>Clear options without confusing packages.</h2>
+          <p class="lead">Prices depend on home size, condition, frequency, and add-ons. Use these cards to help visitors understand which service to request.</p>
+        </div>
+        <div class="plans-grid">
+          <article class="plan-card">
+            <h3>One-Time Refresh</h3>
+            <p class="plan-price">Quote<span>Best for occasional resets</span></p>
+            <p>Great before guests, after busy weeks, or when your home needs a professional reset.</p>
+            <ul class="plan-list"><li><span class="check">✓</span>Kitchen and bathroom focus</li><li><span class="check">✓</span>Floors, dusting, surfaces</li><li><span class="check">✓</span>Add-ons available</li></ul>
+          </article>
+          <article class="plan-card featured">
+            <h3>Recurring Care</h3>
+            <p class="plan-price">Quote<span>Weekly, bi-weekly, monthly</span></p>
+            <p>Keep your home consistently fresh with a saved checklist and a schedule that fits your life.</p>
+            <ul class="plan-list"><li><span class="check">✓</span>Priority notes saved</li><li><span class="check">✓</span>Flexible frequency</li><li><span class="check">✓</span>Pet-friendly options</li></ul>
+          </article>
+          <article class="plan-card">
+            <h3>Move-Out Detail</h3>
+            <p class="plan-price">Quote<span>For leases, sales, and keys</span></p>
+            <p>Detailed empty-home cleaning that helps you leave or arrive with confidence.</p>
+            <ul class="plan-list"><li><span class="check">✓</span>Cabinets and drawers</li><li><span class="check">✓</span>Appliance interiors</li><li><span class="check">✓</span>Final walkthrough polish</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">Social proof</div>
+          <h2>Warm, specific reviews convert better than generic praise.</h2>
+          <p class="lead">Keep these only if they match real client feedback. For production, replace with verified Google, Facebook, or booking-platform reviews.</p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="Five stars">★★★★★</div>
+            <blockquote>“Cloud Cleaning transformed my home after a renovation. Every surface was spotless — even places I hadn’t thought of.”</blockquote>
+            <div class="review-author"><span class="avatar">JM</span><div><strong>Jessica M.</strong><span>Round Rock, TX</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="Five stars">★★★★★</div>
+            <blockquote>“I have two dogs and needed pet-safe cleaning. They were thoughtful, thorough, and easy to schedule.”</blockquote>
+            <div class="review-author"><span class="avatar">TR</span><div><strong>Tommy R.</strong><span>Georgetown, TX</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="Five stars">★★★★★</div>
+            <blockquote>“The move-out clean was incredible. My landlord was amazed and the whole process felt stress-free.”</blockquote>
+            <div class="review-author"><span class="avatar">AK</span><div><strong>Allison K.</strong><span>Hutto, TX</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas" id="areas">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Service areas</div>
+          <h2>Proudly cleaning homes across Central Texas.</h2>
+          <p class="lead">Based in the Austin area and serving nearby communities. Not seeing your city? Reach out — we may still be able to help.</p>
+        </div>
+        <div class="area-chips" aria-label="Cities served">
+          <span class="area-chip">📍 Austin</span>
+          <span class="area-chip">📍 Round Rock</span>
+          <span class="area-chip">📍 Georgetown</span>
+          <span class="area-chip">📍 Hutto</span>
+          <span class="area-chip">📍 Cedar Park</span>
+          <span class="area-chip">📍 Pflugerville</span>
+          <span class="area-chip">+ Surrounding areas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-header center">
+          <div class="eyebrow">FAQ</div>
+          <h2>Answer questions before customers hesitate.</h2>
+          <p class="lead">FAQ content improves trust and helps visitors understand what happens after they request a quote.</p>
+        </div>
+        <div class="faq-grid">
+          <details>
+            <summary>Do I need to provide cleaning supplies?</summary>
+            <p>No. We can bring standard supplies and equipment. If you prefer a specific product, fragrance-free option, or your own supplies, note that in your quote request.</p>
+          </details>
+          <details>
+            <summary>Are your products safe for pets and kids?</summary>
+            <p>Pet-friendly and eco-conscious product options are available. Tell us about pets, allergies, sensitivities, or product preferences before your appointment.</p>
+          </details>
+          <details>
+            <summary>What is the difference between standard and deep cleaning?</summary>
+            <p>Standard cleaning maintains an already-kept space. Deep cleaning is more detailed and is better for first-time visits, buildup, baseboards, fixtures, and overlooked areas.</p>
+          </details>
+          <details>
+            <summary>Can I book recurring service?</summary>
+            <p>Yes. Weekly, bi-weekly, monthly, and custom recurring schedules can be quoted based on your home, priorities, and availability.</p>
+          </details>
+          <details>
+            <summary>How quickly will you respond?</summary>
+            <p>During business hours, we aim to reply as quickly as possible. For urgent scheduling, calling or texting 512-486-0448 is the fastest option.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <aside class="contact-card">
+          <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1000&q=82" alt="Vacuum cleaning carpet for a fresh home" loading="lazy" decoding="async" />
+          <div class="contact-content">
+            <div class="eyebrow">Get in touch</div>
+            <h2>Ready for a cleaner home?</h2>
+            <p>Call, text, email, or send the form. We will help you pick the right service and scheduling option.</p>
+            <ul class="contact-list">
+              <li><span class="contact-icon">☎</span><div><strong>Call or text</strong><a href="tel:5124860448">512-486-0448</a></div></li>
+              <li><span class="contact-icon">✉</span><div><strong>Email</strong><a href="mailto:cloudcleanexperience@gmail.com">cloudcleanexperience@gmail.com</a></div></li>
+              <li><span class="contact-icon">📍</span><div><strong>Serving</strong><span>Austin & Central Texas</span></div></li>
+            </ul>
+            <div class="hours" aria-label="Hours of operation">
+              <div class="hours-row"><span>Monday – Friday</span><strong>8 AM – 7 PM</strong></div>
+              <div class="hours-row"><span>Saturday</span><strong>9 AM – 5 PM</strong></div>
+              <div class="hours-row"><span>Sunday</span><strong>Closed</strong></div>
+            </div>
+          </div>
+        </aside>
+
+        <form class="form-card" id="quote-form">
+          <div class="form-intro">
+            <div class="eyebrow">Free quote</div>
+            <h2>Tell us what you need.</h2>
+            <p>Until this form is connected to a CRM or form service, it opens a pre-filled email to Cloud Cleaning with the details below.</p>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="first-name">First name *</label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" placeholder="Jane" required />
+            </div>
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" placeholder="Smith" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="512-000-0000" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" />
+            </div>
+            <div class="field">
+              <label for="service">Service needed *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option>Residential Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move-In / Move-Out</option>
+                <option>Office / Commercial</option>
+                <option>Pet-Friendly / Eco-Friendly Cleaning</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="frequency">Frequency</label>
+              <select id="frequency" name="frequency">
+                <option>One-time</option>
+                <option>Weekly</option>
+                <option>Bi-weekly</option>
+                <option>Monthly</option>
+                <option>Need recommendation</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="address">Address / city *</label>
+              <input id="address" name="address" type="text" autocomplete="street-address" placeholder="e.g. 123 Main St, Round Rock, TX" required />
+            </div>
+            <div class="field full">
+              <label for="details">Tell us more</label>
+              <textarea id="details" name="details" placeholder="Square footage, bedrooms/bathrooms, pets, preferred days, special requests, move-out deadline..."></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Request Free Quote →</button>
+            <a class="btn btn-ghost" href="tel:5124860448">Call Instead</a>
+          </div>
+          <p class="form-note">No spam. No pressure. We only use your information to respond to your cleaning request.</p>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="brand" aria-label="Cloud Cleaning Services home">
+            <span class="brand-mark" aria-hidden="true">☁</span>
+            <span class="brand-text"><span class="brand-name">Cloud Cleaning</span><span class="brand-sub">Austin • Central TX</span></span>
+          </a>
+          <p>Local, family-owned cleaning services across Austin and Central Texas. Pet-friendly, eco-conscious, and built around your schedule.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Residential Cleaning</a></li>
+            <li><a href="#services">Deep Cleaning</a></li>
+            <li><a href="#services">Move-In / Move-Out</a></li>
+            <li><a href="#services">Office Cleaning</a></li>
+            <li><a href="#services">Eco-Friendly Cleaning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#method">How It Works</a></li>
+            <li><a href="#gallery">Results</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#areas">Service Areas</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:5124860448">512-486-0448</a></li>
+            <li><a href="mailto:cloudcleanexperience@gmail.com">cloudcleanexperience@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/cloudcleaningservicess/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/casscloudcleaning" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@cloudcleaningservices" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Cloud Cleaning Services. All rights reserved.</span>
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.instagram.com/cloudcleaningservicess/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/casscloudcleaning" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.tiktok.com/@cloudcleaningservices" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-quote">
+    <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+  </div>
+
+  <script>
+    const header = document.querySelector('[data-header]');
+    const toggle = document.querySelector('[data-nav-toggle]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    const quoteForm = document.querySelector('#quote-form');
+    const formStatus = document.querySelector('#form-status');
+
+    document.querySelector('#year').textContent = new Date().getFullYear();
+
+    function closeMenu() {
+      document.body.classList.remove('nav-open');
+      header.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open menu');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isOpen = header.classList.toggle('nav-open');
+      document.body.classList.toggle('nav-open', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    navLinks.forEach((link) => link.addEventListener('click', closeMenu));
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeMenu();
+    });
+
+    quoteForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(quoteForm);
+      const firstName = String(data.get('firstName') || '').trim();
+      const lastName = String(data.get('lastName') || '').trim();
+      const service = String(data.get('service') || '').trim();
+      const phone = String(data.get('phone') || '').trim();
+      const email = String(data.get('email') || '').trim();
+      const frequency = String(data.get('frequency') || '').trim();
+      const address = String(data.get('address') || '').trim();
+      const details = String(data.get('details') || '').trim();
+
+      if (!firstName || !phone || !service || !address) {
+        formStatus.textContent = 'Please complete the required fields before submitting.';
+        return;
+      }
+
+      const fullName = [firstName, lastName].filter(Boolean).join(' ');
+      const subject = encodeURIComponent(`New cleaning quote request from ${fullName}`);
+      const body = encodeURIComponent([
+        'New quote request from Cloud Cleaning website:',
+        '',
+        `Name: ${fullName}`,
+        `Phone: ${phone}`,
+        `Email: ${email || 'Not provided'}`,
+        `Service: ${service}`,
+        `Frequency: ${frequency || 'Not provided'}`,
+        `Address / City: ${address}`,
+        '',
+        'Details:',
+        details || 'No extra details provided.'
+      ].join('\n'));
+
+      formStatus.textContent = 'Opening your email app with the quote request. You can review it before sending.';
+      window.location.href = `mailto:cloudcleanexperience@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
